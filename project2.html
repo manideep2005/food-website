@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>race academy  </title>
+    
+
+   <style>
+    
+    
+    .tops{
+
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+   background: fixed;
+    background-image: url(https://www.shutterstock.com/image-photo/book-compass-on-table-concept-600nw-2280444213.jpg);
+    background-image: cover;
+    background-size: cover;
+    background-position: center;
+    align-items: flex-start;
+    position: relative;
+    
+    }
+    .tops h1{
+        text-align: center;
+        align-items: center;
+       color: aqua;
+    }
+    .toolbar{
+     width: 100%;
+     height: 75px;
+    margin: auto;
+    padding: 0px 10px;
+    display: flex;
+    align-items: right end;
+    justify-content: space-between;
+}
+.toolbar h4{
+    text-align: right;
+   
+    display: inline-block;
+
+}
+.toolbar h4 ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#ec75ae;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.6s;
+
+}
+
+.text{
+text-align: center;
+text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+button{
+    width: 200px;
+    height: 50px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 2px solid #f386bb;
+
+    background: transparent;
+    color: wheat;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+
+}
+ .container {
+    height: 100px;
+    width: 10px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #a89a9a;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    
+    .change .bar1 {
+      transform: translate(0, 11px) rotate(-45deg);
+    }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+      transform: translate(0, -11px) rotate(45deg);
+    }
+   </style>
+</head>
+<body>
+   
+   
+    <div class = "tops">
+ 
+        <h1 style="font-size: 100px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida '; text-align: center ";> Race Academy</h1>
+
+    <div class="toolbar">
+        
+        <ul>
+            <li><a href="#"><h4>Home</h4></a>
+            <li><a href="#"><h4>about us</h4></a></li>
+            <li><a href="#"><h4>contact us</h4> </a></li>
+            <li><a href="#"><h4>Locations</h4></a></li>
+        </ul>
+        <div class = "text"
+        
+        <h1 style="font-size:50px"></h1> Ignite  your life with ous</h1>
+        <button>sign in</button>
+        <button>sign up</button>
+    </div>
+        
+    </div>
+ 
+    <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      
+      <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+      </script>
+    
+
+<menu>
+  
+</menu>
+    
+</body>
+</html>
+
