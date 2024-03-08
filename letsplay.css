@@ -15,7 +15,7 @@ section{
 section h1{
     padding-bottom: 30px;
     font-size: 2rem;
-    text-shadow: 1px 1px 2px white;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 .centerdiv{
     width: 500px;
@@ -72,10 +72,50 @@ section h1{
     width: 20px;
 }
 .sentBox button{
-    padding: 10px 20px;
+    padding: 20px 20px;
     font-size: 0.8rem;
     color: white;
     border: none;
     background-color: rgb(1, 121, 81);
     border-radius: 2px;
 } 
+button {
+    border-radius: 4px;
+    background-color: #5ca1e1;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    padding: 16px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.8s;
+  }
+  
+  button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  button:hover:after {
+    opacity: 5;
+    right: 10px;
+  }
